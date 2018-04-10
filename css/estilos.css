@@ -31,7 +31,7 @@ body{
 -----------------------------------------------------------------------------*/
 .encabezado{
 	height: 60px;
-	background-color: firebrick;
+	background-color: navy;
 	overflow: hidden;
 	position:fixed; 
 	width: 100%;
@@ -66,16 +66,12 @@ body{
 	text-decoration: none;
 	border-left: 1px solid #696969;
 }
-.last{
-	
-	border-right: 1px solid #696969;
-}
-
 
 .encabezado nav ul li a:hover{
 background-color: #686868;
 	
 }
+
 .logo{
 	text-align: center;
 	font-size: 40px;
@@ -95,7 +91,25 @@ a:hover{
 
 }
 
-
+.perfil{
+	position: absolute;
+	width: 20%;
+	margin-top: 10%;
+	margin-left: 41%;
+}
+.perfil img{
+	padding: -10;
+	border: 2px solid firebrick;
+	border-radius: 50%;
+}
+.descri{
+	background-color: rgba(1, 1, 1, 0.6);
+	font-weight: bold;
+	color: white;
+	position: absolute;
+	margin-top: 31%;
+	margin-left: 37%;
+}
 
 
 /*-----------------------------------------------------------------------------
@@ -125,19 +139,6 @@ a:hover{
 	animation-direction: alternate;
 }
 
-.slider li {
-	width: 100%;
-	list-style: none;
-}
-
-.slider h1{
-	padding-top: 120px;
-	font-size: 55px;
-}
-
-.slider-izquierdo span{
-	font-size: 18px;
-}
 
 @keyframes cambio {
 	0% {margin-left: 0;}
@@ -165,36 +166,84 @@ a:hover{
 }
 
  p{
-		text-align: center;
+		text-align: justify;
 	 	font-size: 24px;
 }
 
 .sobremi{
+	color: navy;
 	padding-top:80px; 
-	 height: 1400px;
+	height: auto;
 	background-color: lightgray;
-	margin-left: 20px;
+	
+	padding-bottom: 100px;
 }
+
 .servicios{
+	color: navy;
 	padding-top:80px; 
-	 height: 1400px;
+	height: 1300px;
 	background-color: white;
 }
+.columna1{
+	float: left;
+}
+.columna2{
+	float: right;
+}
+.columna1  img{
+	height: 250px;
+	width: 250px;
+
+}
+.columna2  img{
+	height: 250px;
+	width: 250px;
+	
+}
+#circulo {
+	width: 100%;
+	height: 500px;
+	border-radius: 50%;
+	border: 2px solid navy;
+
+	
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 50px;
+}
+#circulo > p {
+	
+	margin-left: 40px;
+	margin-right: 40px;
+	text-align: center;
+	font-family: sans-serif;
+	color: navy;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+
+
 .productos{
+	color: navy;
 	padding-top:80px;
 	background-color: lightgray;
-	height: 1400px;
+	height: auto;
+	padding-bottom: 100px;
 }
 .contacto{
+	color: navy;
 	padding-top:80px; 
-	height: 1400px;
+	height: 1000px;
 	background-color: white;
 }
 /*-----------------------------------------------------------------------------
 	FOOTER
 -----------------------------------------------------------------------------*/
 .footer{
-    background-color: maroon;
+    background-color: navy;
 	color: white;
     height: 80px;
     padding-top: 30px;
