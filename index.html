@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>MarcoSoft</title>
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script>
+	$(function(){
+
+     $('a[href*=#]').click(function() {
+
+     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+         && location.hostname == this.hostname) {
+
+             var $target = $(this.hash);
+
+             $target = $target.length && $target || $('[name=' + this.hash.slice(1060) +']');
+
+             if ($target.length) {
+
+                 var targetOffset = $target.offset().top;
+
+                 $('html,body').animate({scrollTop: targetOffset}, 1000);
+
+                 return false;
+
+            }
+
+       }
+
+   });
+
+});
+</script>
+
+
+<script>
+	
+window.onload = function (){
+	var contenedor = document.getElementById('contenedor_carga');
+	
+	contenedor.style.visibility = 'hidden';
+	contenedor.style.opacity = '0';
+}	
+</script>
+</head>
+
+
+<body>
+	
+	<header class="encabezado" role="banner"> <!-- .encabezado-->
+		<div class="contenedor animated zoomInUp">
+			<a href="#inicio" class="logo">
+		      <img src="img/logo1.png">MarcoSoft 
+			</a>
+			
+			<nav role="navigation">
+				<ul>
+					
+					<li><a href="#sobre">SOBRE MI</a></li>
+					<li><a href="#servicios">SERVICIOS</a></li>
+					<li><a href="#productos">PRODUCTOS</a></li>
+					<li><a class="last" href="#contacto">CONTACTO</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header> <!-- Fin de .encabezado-->
+	
+	
+	<div id="contenedor_carga">
+		<div id="carga"></div>
+	</div>
+	
+	<div id="inicio" class="slider">  <!-- .slider-->
+		<div class="contenedor">
+			<div class="slider">
+			
+				<ul>
+					<li><img src="img/img1.jpg" alt=""></li>
+					<li><img src="img/img2.jpg" alt=""></li>
+					<li><img src="img/img3.jpg" alt=""></li>
+					<li><img src="img/img4.jpg" alt=""></li>
+				</ul>		
+			</div>
+			
+		</div>
+	</div> <!-- Fin de .slider-->
+	
+	
+	
+	
+	
+
+
+	
+	<div class="contenido"> <!-- .contenido-->
+	    <div id="sobre" class="container-fluid sobremi animated zoomInUp">
+	    	<div class="container">
+	    <h2 class="">SOBRE MI</h2> <br>
+	    
+	    <p> Soy Marcos Acosta Velázquez, estudiante de Analisis de Sistemas. Siempre me ha interesado el mundo de la informática;
+	    	comenzé a conocer mas y usar software profesional al crear contenido en Youtube. Tuve la necesidad de capturar los videos
+	    	asi como tambien la de editarlos.</p>
+	    
+	    <p> Youtube de alguna manera te obliga a usar estas herramientas, por ende aumenta tu conocimiento sobre edicion, renders y 
+	    sobre todo como crear contenido de calidad. Ahi comenzo mi travesia en el mundo semiprofesional con la tecnologia.</p>
+	    
+	    <p> Esto fue cuando todavia cursaba la secundaria. Por tal motivo al terminar la secundaria tuve la necesidad de elegir que
+	    carrera iba a seguir; y pues como me considero familiarizado con el mundo de la tecnología opte por entrar a la carrera
+	    de Análisis de Sistemas. Carrera en donde me llego mas a la parte de diseño y desarrollo de software, en efecto esto era dar 
+	    el siguiente paso, ya no solo se enseñaba usar programas; mas bien ahora es analizar, diseñar y programar soluciones 
+	    enfocados en el mundo de los negocios, pequeñas empresas como asi tambien grandes corporaciones que dia a dia manejan mas y 
+	    mas informaciones. </p>
+	    
+	    <p> El labor como analista mas alla de diseñar y desarrollar software; es el correcto manejo de las informaciones
+	    para asi ayudar a la empresa entender el funcionamiento interno de su negocio y ofrecerles informaciones para que pueda 
+	    mejorar de alguna manera su negocio. Por ejemplo la optimizacion del proceso de ventas</p>
+	    
+	    <p> En la universidad aprendi java (básico), JAVA en ese momento era el lenguaje de programacion mas utilizado 
+	    por los programadores, y por lo tanto lo mas demandado por las empresas. Con JAVA surgia el gran dilema de que parecia un 
+	    lenguaje estatico, me explico: con java nos enseñaron a crear aplicaciones de ecritorio. Pero y que pasa con Internet, 
+	    comprendi que con JAVA se perdia gran parte del mercado, asi que me enfoque mas a la parte de desarrollo web. </p>
+	    
+	    <p> Entrando en un nuevo mundo lo primero que me fascino fue las muchas herramietas que me he encontrado para desarrollar paginas web
+	     como asi las aplicaciones web que no son lo mismo!. Actualmente me encuentro mas comodo con desarrollo web, mas bien desarrollo
+	     con JAVASCRIPT, bueno con las librerias que nos brinda este excelente lenguaje web. </p>
+	     </div>
+	    </div>
+	    
+	    
+	    
+	        <div id="servicios" class="container-fluid servicios  animated zoomInUp">
+	   			 <h2>SERVICOS</h2> <br>
+	    
+				<div class="item-servicio">
+
+					<div class="imagen">
+						<img src="img/logo.png" alt="">
+					</div>
+
+					<div class="descripcion">
+						<p>Ofrecemos soluciones con desarrollo de software a medida,
+						cada usuario tiene su propio espacio en su sistema, nos enfocamos en 
+						darles una experiencia bien exclusiva. </p>
+					</div>
+
+
+				</div>
+	
+	    	</div>
+	    	
+	    	
+	    	<div id="productos" class="container-fluid productos  animated zoomInUp">
+	   			 <h2>PRODUCTOS</h2> <br>
+	    
+				<div class="item-producto">
+
+					<div class="imagen">
+						<img src="img/logo.png" alt="">
+					</div>
+
+					<div class="descripcion">
+						<p>Ofrecemos soluciones con desarrollo de software a medida,
+						cada usuario tiene su propio espacio en su sistema, nos enfocamos en 
+						darles una experiencia bien exclusiva. </p>
+					</div>
+
+
+				</div>
+	
+	    	</div>
+	    	
+	    	
+	    	
+	    	
+	    	<div id="contacto" class="container-fluid contacto  animated zoomInUp">
+	   			 <h2>CONTACTO</h2> <br>
+	    
+				<div class="item-contacto">
+
+
+					<div class="descripcion">
+						<p> En este apartado vas a poder comunicarte con nuestro equipo. Deje su mensaje.</p>
+					</div>
+
+
+				</div>
+	
+	    	</div>
+	</div> <!-- Fin de .contenido-->
+	
+	<div class="footer  animated zoomInUp">  <!-- .footer-->
+	    <footer>
+            MarcoSoft 2018
+        </footer> <!-- fin .footer-->
+	</div>
+	
+</body>
+</html>

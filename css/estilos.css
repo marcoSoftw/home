@@ -1,0 +1,238 @@
+*,*:after, *before{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.4em;
+}
+
+
+/*-----------------------------------------------------------------------------
+	Anchura del Sitio
+-----------------------------------------------------------------------------*/
+.contenedor{
+
+
+	
+}
+
+
+/*-----------------------------------------------------------------------------
+	ENCABEZADO
+-----------------------------------------------------------------------------*/
+.encabezado{
+	height: 60px;
+	background-color: firebrick;
+	overflow: hidden;
+	position:fixed; 
+	width: 100%;
+	z-index: 100;
+	
+}
+
+.encabezado nav{
+	float: right;
+	
+}
+
+
+
+.encabezado nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	
+}
+ 
+.encabezado nav ul li{
+	display: inline-block;
+	margin-right: -4px;
+	
+}
+
+.encabezado nav ul li a{
+	display: block;
+	color: #fff;
+	padding: 18px;
+	text-decoration: none;
+	border-left: 1px solid #696969;
+}
+.last{
+	
+	border-right: 1px solid #696969;
+}
+
+
+.encabezado nav ul li a:hover{
+background-color: #686868;
+	
+}
+.logo{
+	text-align: center;
+	font-size: 40px;
+    margin-left: 3%;
+	margin-top: -5px;
+	float: left;
+	text-decoration: none !important;
+	color: #fff;	
+}
+.logo img{
+	margin-top: -5px;
+	height: 60px;
+}
+
+a:hover{
+	color: #fff !important;
+
+}
+
+
+
+
+/*-----------------------------------------------------------------------------
+	SLIDER
+-----------------------------------------------------------------------------*/
+.slider{
+	width: 100%;
+	margin: auto;
+	background-color: beige;
+	text-align: center;
+	overflow: hidden;
+	padding-top: 30px;
+}
+
+.slider img{
+	width: 100%;
+	height: 100%;
+}
+
+.slider ul {
+	display: flex;
+	margin-bottom: 0;
+	padding: 0;
+	width: 400%;
+	
+	animation: cambio 20s infinite;
+	animation-direction: alternate;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider h1{
+	padding-top: 120px;
+	font-size: 55px;
+}
+
+.slider-izquierdo span{
+	font-size: 18px;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+
+
+/*-----------------------------------------------------------------------------
+	CONTENIDO
+-----------------------------------------------------------------------------*/
+.contenido{
+    background-color:white;
+	text-align: center;
+
+}
+
+ p{
+		text-align: center;
+	 	font-size: 24px;
+}
+
+.sobremi{
+	padding-top:80px; 
+	 height: 1400px;
+	background-color: lightgray;
+	margin-left: 20px;
+}
+.servicios{
+	padding-top:80px; 
+	 height: 1400px;
+	background-color: white;
+}
+.productos{
+	padding-top:80px;
+	background-color: lightgray;
+	height: 1400px;
+}
+.contacto{
+	padding-top:80px; 
+	height: 1400px;
+	background-color: white;
+}
+/*-----------------------------------------------------------------------------
+	FOOTER
+-----------------------------------------------------------------------------*/
+.footer{
+    background-color: maroon;
+	color: white;
+    height: 80px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+/*-----------------------------------------------------------------------------
+	PRELOADER
+-----------------------------------------------------------------------------*/
+#contenedor_carga{
+	background-color: rgba(250, 240, 245, 0.9);
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	transition: all 1s ease;
+	z-index: 10000;
+	
+}
+
+#carga{
+	border: 15px solid #ccc;
+	border-top-color: #F4266A;
+	border-top-style: groove;
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	
+	position: absolute;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	
+	animation: girar 1.5s linear infinite;
+}
+
+@keyframes girar {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
