@@ -16,31 +16,25 @@ body{
 }
 
 
-/*-----------------------------------------------------------------------------
-	Anchura del Sitio
------------------------------------------------------------------------------*/
-.contenedor{
-
-
-	
-}
-
 
 /*-----------------------------------------------------------------------------
 	ENCABEZADO
 -----------------------------------------------------------------------------*/
 .encabezado{
-	height: 60px;
 	background-color: navy;
 	overflow: hidden;
 	position:fixed; 
 	width: 100%;
 	z-index: 100;
 	
+	
+
+	
 }
 
 .encabezado nav{
 	float: right;
+	
 	
 }
 
@@ -51,11 +45,15 @@ body{
 	padding: 0;
 	list-style: none;
 	
+
+	
 }
  
 .encabezado nav ul li{
 	display: inline-block;
 	margin-right: -4px;
+	
+
 	
 }
 
@@ -65,6 +63,7 @@ body{
 	padding: 18px;
 	text-decoration: none;
 	border-left: 1px solid #696969;
+
 }
 
 .encabezado nav ul li a:hover{
@@ -79,11 +78,15 @@ background-color: #686868;
 	margin-top: -5px;
 	float: left;
 	text-decoration: none !important;
-	color: #fff;	
+	color: #fff;
+	
+	flex-direction: row;
 }
 .logo img{
 	margin-top: -5px;
 	height: 60px;
+	
+	flex-direction: row;
 }
 
 a:hover{
@@ -91,25 +94,26 @@ a:hover{
 
 }
 
-.perfil{
+.perfil {
 	position: absolute;
 	width: 20%;
 	margin-top: 10%;
 	margin-left: 41%;
+	font-size: 20px;
+	color: white;
+	
 }
-.perfil img{
+.perfil img {
 	padding: -10;
-	border: 2px solid firebrick;
+	border: 3px solid navy;
 	border-radius: 50%;
 }
-.descri{
-	background-color: rgba(1, 1, 1, 0.6);
-	font-weight: bold;
-	color: white;
-	position: absolute;
-	margin-top: 31%;
-	margin-left: 37%;
+.perfil p{
+	text-align: center;
+	background-color: rgba(1, 1, 1, 0.9);
+	
 }
+
 
 
 /*-----------------------------------------------------------------------------
@@ -270,3 +274,20 @@ a:hover{
 	from { transform: rotate(0deg); }
 	to { transform: rotate(360deg); }
 }
+
+
+
+
+/*-----------------------------------------------------------------------------
+	MEDIAQUERIES FOR MENU
+-----------------------------------------------------------------------------*/
+@media screen and (max-width: 800px){
+	
+	.logo{
+		font-size: 24px;
+		padding-top: 1%;
+	}
+	
+	
+}
+
