@@ -6,7 +6,10 @@
 	<link rel="stylesheet" href="css/estilos.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/animate.css">
-	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/headroom.min.js" type="text/javascript"></script>
+
 	
 	<script>
 	$(function(){
@@ -18,7 +21,7 @@
 
              var $target = $(this.hash);
 
-             $target = $target.length && $target || $('[name=' + this.hash.slice(1060) +']');
+             $target = $target.length && $target || $('[name=' + this.hash.slice(1000) +']');
 
              if ($target.length) {
 
@@ -54,7 +57,7 @@ window.onload = function (){
 
 <body>
 	
-	<header class="encabezado" role="banner"> <!-- .encabezado-->
+	<header id="encabezado" class="encabezado" role="banner"> <!-- .encabezado-->
 		<div class="contenedor animated zoomInUp">
 			<a href="#inicio" class="logo">
 		      <img src="img/logo1.png">MarcoSoft 
@@ -84,10 +87,10 @@ window.onload = function (){
 			
 				<div class="perfil">
 					<img src="img/logo2.png" alt="">
+					
+					<p>Marcos Acosta Velázquez</p>
 				</div>
-				<div class="descri">
-					<p>MARCOS ACOSTA VELÁZQUEZ</p>
-				</div>
+
 				<ul>
 					<li><img src="img/img1.jpg" alt=""></li>
 				</ul>		
