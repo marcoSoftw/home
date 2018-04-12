@@ -3,12 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<title>MarcoSoft</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
 	<link rel="stylesheet" href="css/estilos.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/animate.css">
 	
 	<script src="js/jquery.min.js" type="text/javascript"></script>
 	<script src="js/headroom.min.js" type="text/javascript"></script>
+	<script src="js/menu.js" type="text/javascript"></script>
 
 	
 	<script>
@@ -57,22 +60,26 @@ window.onload = function (){
 
 <body>
 	
-	<header id="encabezado" class="encabezado" role="banner"> <!-- .encabezado-->
-		<div class="contenedor animated zoomInUp">
-			<a href="#inicio" class="logo">
-		      <img src="img/logo1.png">MarcoSoft 
-			</a>
+	<header id="menu" role="banner"> <!-- .encabezado-->
+		
+		<div  class="encabezado container-fluid animated zoomInUp" >
 			
-			<nav role="navigation">
-				<ul>
-					
-					<li><a href="#sobre">SOBRE MI</a></li>
-					<li><a href="#servicios">SERVICIOS</a></li>
-					<li><a href="#productos">PRODUCTOS</a></li>
-					<li><a class="last" href="#contacto">CONTACTO</a></li>
-				</ul>
-			</nav>
+				<a href="#inicio" class="logo">
+				  <img src="img/logo1.png">MarcoSoft 
+				</a>
+
+				<nav role="navigation">
+					<ul>
+
+						<li><a href="#sobre">SOBRE MI</a></li>
+						<li><a href="#servicios">SERVICIOS</a></li>
+						<li><a href="#productos">PRODUCTOS</a></li>
+						<li><a class="last" href="#contacto">CONTACTO</a></li>
+					</ul>
+				</nav>
+			
 		</div>
+		
 	</header> <!-- Fin de .encabezado-->
 	
 	
@@ -81,8 +88,8 @@ window.onload = function (){
 		
 	</div>
 	
-	<div id="inicio" class="slider">  <!-- .slider-->
-		<div class="contenedor">
+	<div id="inicio" class="slider animated zoomInUp">  <!-- .slider-->
+		<div class="contenedor-fluid">
 			<div class="slider">
 			
 				<div class="perfil">
@@ -106,9 +113,9 @@ window.onload = function (){
 
 
 	
-	<div class="contenido"> <!-- .contenido-->
+	<div class="container-fluid contenido"> <!-- .contenido-->
 	    <div id="sobre" class="container-fluid sobremi animated zoomInUp">
-	    	<div class="container">
+	    	
 	    <h2 class="">SOBRE MI</h2> <br>
 	    
 	    <p>Soy Marcos Acosta Velázquez, estudiante de Análisis de Sistemas. Siempre me ha interesado el mundo de la informática; comencé a conocer mas y usar software semiprofesional al crear contenido para YouTube. Tuve la necesidad de capturar los videos, así como también la de editarlos.
@@ -122,45 +129,47 @@ window.onload = function (){
 		<br>
 		Entrando al mundo del desarrollo web lo primero que me fascino fue las muchas herramientas que me he encontrado para desarrollar páginas web como así las aplicaciones web que no son lo mismo. Actualmente me encuentro más cómodo con desarrollo web, más bien desarrollo con librerias de JAVASCRIPT.
 		</p>
-	     </div>
+	    
 	    </div>
 	    
 	    
 	    
 	        <div id="servicios" class="container-fluid servicios  animated zoomInUp">
 	   			 <h2>SERVICIOS</h2> <br>
-
-					<div class="columna1 col-md-6">
-						<div class="fila1" id="circulo">
+				
+				<div class="row">
+					<div class="col-md-6">
+						
 						<img src="img/logo1.png" alt="">
 						<p>Ofrecemos soluciones con desarrollo de software a medida,
 						cada usuario tiene su propio espacio en su sistema, nos enfocamos en 
 						darles una experiencia bien exclusiva. </p>
-						</div>
-						<div class="fila1" id="circulo" >
+						
+					
 						<img src="img/logo1.png" alt="">
 						<p>Ofrecemos soluciones con desarrollo de software a medida,
 						cada usuario tiene su propio espacio en su sistema, nos enfocamos en 
 						darles una experiencia bien exclusiva. </p>
-						</div>
+						
 					</div>
 					
-					<div class="columna2 col-md-6">
-						<div class="fila2" id="circulo">
+					<div class="col-md-6">
+						
 						<img src="img/logo1.png" alt="">
 						<p>Ofrecemos soluciones con desarrollo de software a medida,
 						cada usuario tiene su propio espacio en su sistema, nos enfocamos en 
 						darles una experiencia bien exclusiva. </p>
-						</div>
-						<div class="fila2" id="circulo">
+						
+					
 						<img src="img/logo1.png" alt="">
 						<p>Ofrecemos soluciones con desarrollo de software a medida,
 						cada usuario tiene su propio espacio en su sistema, nos enfocamos en 
 						darles una experiencia bien exclusiva. </p>
-						</div>
+						
 
 
 				</div>
+			</div>
 	
 	    	</div>
 	    	
