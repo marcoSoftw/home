@@ -16,12 +16,20 @@
 
 	
 	<script>
+		
+	window.onload = function (){
+	var contenedor = document.getElementById('contenedor_carga');
+
+	contenedor.style.visibility = 'hidden';
+	contenedor.style.opacity = '0'; }
+	
+	
 	$(function(){
 
-     $('a[href*=#]').click(function() {
+	     $('a[href*=#]').click(function() {
 
-     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-         && location.hostname == this.hostname) {
+	     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+		 && location.hostname == this.hostname) {
 
              var $target = $(this.hash);
 
@@ -44,18 +52,6 @@
 });
 </script>
 
-
-<script>
-	
-window.onload = function (){
-	var contenedor = document.getElementById('contenedor_carga');
-	
-	contenedor.style.visibility = 'hidden';
-	contenedor.style.opacity = '0';
-
-
-}	
-</script>
 </head>
 
 
