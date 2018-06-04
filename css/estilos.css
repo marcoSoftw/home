@@ -412,8 +412,14 @@ a:hover{
 	}
 	
 	
-	
-	
+.servicios img{
+	width: 250px;
+	height: 250px;
+}
+.productos img{
+	width: 250px;
+	height: 200px;
+}
 }
 
 @media screen and (max-width: 400px){
@@ -423,6 +429,7 @@ a:hover{
 		margin: 0;
 		padding: 0;
 	}
+	
 	
 	
 }
