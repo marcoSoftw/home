@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Created By CodingNepal -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,13 +16,13 @@
     
 
 </head>
-<body>
+<body onload="geo()">
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#">Marco<span>Soft</span></a></div>
+            <div class="logo"><a href="#">Marco<span>Sof</span></a></div>
             <ul class="menu">
                 <li><a href="#home" class="menu-btn">Home</a></li>
                 <li><a href="#about" class="menu-btn">Sobre</a></li>
@@ -58,7 +59,7 @@
                     <img src="images/profile.jpg" alt="">
                 </div>
                 <div class="column right">
-                    <div class="text">Me llamo Marcos Acosta. Y soy <br> <span class="typing-2"></span></div>
+                    <div class="text">Me llamo Marcos Acosta. Y soy <span class="typing-2"></span></div>
                     <p>Analista de Sistemas, siempre me ha interesado el mundo de la informática; comencé a conocer mas y usar software semiprofesional al crear contenido para YouTube. Tuve la necesidad de capturar los videos, así como también la de editarlos.  Esto fue cuando todavía cursaba la secundaria. Por tal motivo al terminar la secundaria tuve la necesidad de elegir qué carrera iba a seguir; y como me considero familiarizado con el mundo de la tecnología opte por cursar la carrera de Análisis de Sistemas. Carrera en donde me llego a interesar más la parte de diseño y desarrollo de software, en efecto esto era dar el siguiente paso, ya no solo se enseñaba usar programas; más bien ahora es analizar, diseñar y programar soluciones enfocados en el mundo de los negocios, pequeñas empresas como así también grandes corporaciones que día a día manejan más y más informaciones.</p>
                     
                 </div>
@@ -163,7 +164,7 @@
                 <div class="card">
                     <div class="box">
                         <img src="images/profile-2.jpeg" alt="">
-                        <div class="text">TRIGO INVESTMENTS</div>
+                        <div class="text">TRIGO INVESTIGMENT</div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                 </div>
@@ -248,9 +249,15 @@
                          <div class="field textarea">
                             <textarea class="message" name="mensaje" cols="30" rows="10" required placeholder="Tu Mensaje.."></textarea>
                         </div>
+                        
+                        <div class="field geo">
+                                <input type="text" name="geo" id="geo" style="visibility:hidden">
+                            </div>
                         <div class="button-area">
-                            <button class="send-msj" type="submit" name="enviar">Enviar mensaje</button>
+                            <button class="send-msj" id="pedirvan" type="submit" name="enviar">Enviar mensaje</button>
                         </div>
+                        
+                        
                     </form>
                 </div>
             </div>
@@ -259,9 +266,35 @@
 
     <!-- footer section start -->
     <footer>
-        <span>Diseño creado by MarcoSoft</a> | <span class="far fa-copyright"></span> 2022 All rights reserved.</span>
+        <span>Diseño creado por <a href="http://marcosoftw.github.io/about/"> by MarcoSoft</a> | <span class="far fa-copyright"></span> 2022 All rights reserved.</span>
     </footer>
+    <script>
+        
+       function geo(){
+           $(document).ready(function () {
+            //Click al boton para pedir permisos
+                if (!!navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(
+                         function (position) {
+                                var  geo = 0;
+                                geo = position.coords.latitude + " " +  position.coords.longitude;
+                     
+                                document.getElementById('geo').value=geo;
+                                console.log("var= "+geo);
+                            },
+                            
+                            function () {
+                               
+                            }
+                    );
+                }
 
+        });
+       }
+        
+        
+
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
