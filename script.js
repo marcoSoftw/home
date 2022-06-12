@@ -70,3 +70,18 @@ $(document).ready(function(){
         }
     });
 });
+
+
+    function geo(){
+        $(document).ready(function () {
+            if (!!navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(
+                 function (position) {
+                    var  geo = 0;
+                    geo = position.coords.latitude + " " +  position.coords.longitude;
+                    document.getElementById('geo').value=geo;
+                    },
+                );
+            }
+        });
+       }
