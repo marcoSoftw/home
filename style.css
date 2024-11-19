@@ -1,3 +1,10 @@
+body a {
+     font-size: 30px;
+     margin: 20px;
+}
+h1 {
+    text-align: center;
+}
 .enlace {
      text-decoration: none;
 } 
