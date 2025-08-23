@@ -1,6 +1,10 @@
+body {
+     background-color: #141414;
+}
 body a {
      font-size: 30px;
      margin: 20px;
+     color: #ffffff;
 }
 h1 {
     text-align: center;
@@ -8,3 +12,4 @@ h1 {
 .enlace {
      text-decoration: none;
 } 
+
