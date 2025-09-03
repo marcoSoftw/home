@@ -5,46 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Home</title>
-    <H1>LISTA DE CANALES</H1>
 </head>
-<body>
+<body onload="modoInicial()" id="principal" >
     <section>
-        <div>        
-            <a href="https://tvlibreonline.org/html/fl/?get=VEVMRUZVVFVST19DNA==" class="enlace" target="_blank"> TELEFUTURO (PY)</a> <br>
-            <a href="https://www.desdepylabs.com/External/tvaccion/telefuturo" class="enlace" target="_blank"> TELEFUTURO OP2 (PY)</a> <br>
-            <a href="https://tvlibreonline.org/html/fl/?get=U05UX0M0" class="enlace" target="_blank"> SNT (PY)</a> <br>
-            <a href="https://tvlibreonline.org/html/fl/?get=UlBDX0M0" class="enlace" target="_blank"> TRECE (PY)</a> <br>
-            <a href="https://tvlibreonline.org/html/fl/?get=Tk9USUNJQVNfUFlfQzQ=" class="enlace" target="_blank"> NPY (PY)</a> <br>
-            <a href="https://tvlibreonline.org/html/fl/?get=QzlOX0M0" class="enlace" target="_blank"> C9N (PY)</a> <br>
-            <a href="https://unicanal.com.py/vivo/" class="enlace" target="_blank"> UNICANAL (PY)</a> <br>
-            <a href="https://tvlibreonline.org/html/fl/?get=TEFfVEVMRV9DNA==" class="enlace" target="_blank"> LATELE (PY)</a> <br>
-            <a href="https://tvlibreonline.org/html/fl/?get=R0VOX1RW" class="enlace" target="_blank"> GEN TV (PY)</a> <br>
-            <a href="https://www.abc.com.py/tv/" class="enlace" target="_blank"> ABC TV (PY)</a> <br>
-            <a href="https://tvlibreonline.org/html/fl/?get=UEFSQVZJU0lPTl9DNA==" class="enlace" target="_blank"> PARAVISION (PY)</a> <br>
-            <a href="https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/index.m3u8" class="enlace" target="_blank"> DW ESPANOL</a> <br>
+        <div>
+		<div id="encabezado">
+  			<h1>LISTA DE CANALES</h1> <button id="boton" onClick=cambiarTema()>Noche</button>
+		</div>
+        <h2>NACIONALES</h2>
+            <a href="https://tvlibreonline.org/html/fl/?get=VEVMRUZVVFVST19DNA==" class="enlace" target="_blank"> TELEFUTURO</a> <br>
+            <a href="https://www.desdepylabs.com/External/tvaccion/telefuturo" class="enlace" target="_blank"> TELEFUTURO OP2</a> <br>
+            <a href="https://tvlibreonline.org/html/fl/?get=U05UX0M0" class="enlace" target="_blank"> SNT</a> <br>
+            <a href="https://tvlibreonline.org/html/fl/?get=UlBDX0M0" class="enlace" target="_blank"> TRECE</a> <br>
+            <a href="https://live2.eu-north-1b.cf.dmcdn.net/sec2(PjLr5TI0dzBGZ0KEXCWgQTP32l4VacNFirRncGj0ffRBhBd9adw27cicbLgFgMCqzTOgMSJgVgYHloqf-Ea9BKVEda6Mv8U8ixM0SzjsRzKd31l9LQDvzPC7pnqDaIUr)/cloud/3/x9ksaba/s/live-720.m3u8" 
+            class="enlace" target="_blank"> TRECE OP2</a> <br>
+            <a href="https://tvlibreonline.org/html/fl/?get=Tk9USUNJQVNfUFlfQzQ=" class="enlace" target="_blank"> NPY</a> <br>
+            <a href="https://tvlibreonline.org/html/fl/?get=QzlOX0M0" class="enlace" target="_blank"> C9N</a> <br>
+            <a href="https://unicanal.com.py/vivo/" class="enlace" target="_blank"> UNICANAL</a> <br>
+            <a href="https://tvlibreonline.org/html/fl/?get=TEFfVEVMRV9DNA==" class="enlace" target="_blank"> LATELE</a> <br>            
+            <a href="https://tvlibreonline.org/html/fl/?get=R0VOX1RW" class="enlace" target="_blank"> GEN</a> <br>
+            <a href="https://www.abc.com.py/tv/" class="enlace" target="_blank"> ABC TV</a> <br>
+            <a href="https://tvlibreonline.org/html/fl/?get=UEFSQVZJU0lPTl9DNA==" class="enlace" target="_blank"> PARAVISION</a> <br>
+            <a href="https://www.gen.com.py/live/" class="enlace" target="_blank"> POPU TV - GEN - HEI</a> <br>
             
+        <h2>ARGENTINA</h2>  
             <a href="https://tvlibreonline.org/html/fl/?get=VGVsZWZlSEQ=" class="enlace" target="_blank"> TELEFE (AR)</a> <br>
             <a href="https://tvlibreonline.org/html/fl/?get=QXJ0ZWFySEQ" class="enlace" target="_blank"> EL TRECE (AR)</a> <br>
             <a href="https://tvlibreonline.org/html/fl/?get=Q2FuYWw3" class="enlace" target="_blank"> TV PUBLICA (AR)</a> <br>
             <a href="https://tvlibreonline.org/html/fl/?get=Q3JvbmljYVRW" class="enlace" target="_blank"> CRONICA TV (AR)</a> <br>
             <a href="https://tvlibreonline.org/html/fl/?get=VG9kb05vdGljaWFz" class="enlace" target="_blank"> TN (AR)</a> <br>
+            <a href="https://tvlivre.online/html/fl/?get=QzVO" class="enlace" target="_blank"> C5N (AR)</a> <br>
+            <a href="https://tvlivre.online/html/fl/?get=QW1lcmljYVRW" class="enlace" target="_blank"> AMERICA TV (AR)</a> <br>
+            <a href="https://tvlivre.online/html/fl/?get=QW1lcmljYTI0" class="enlace" target="_blank"> A24 (AR)</a>
+
+        <h2>DEPORTES</h2>
             <a href="https://tvlibreonline.org/html/fl/?get=VHlDU3BvcnQ" class="enlace" target="_blank"> TyC SPORTS (AR)</a> <br>
             <a href="https://tvlibreonline.org/html/fl/?get=VE5UX1Nwb3J0c19IRA" class="enlace" target="_blank"> TNT SPORTS (AR)</a> <br>
             <a href="https://tvlibreonline.org/html/fl/?get=Rm94X1Nwb3J0c19QcmVtaXVuX0hE" class="enlace" target="_blank"> ESPN PREMIUM (AR)</a> <br>
             <a href="https://tvlibreonline.org/html/fl/?get=RVNQTjJIRA" class="enlace" target="_blank"> ESPN 1 (AR)</a> <br>
             <a href="https://tvlibreonline.org/html/fl/?get=RVNQTjJfQXJn" class="enlace" target="_blank"> ESPN 2 (AR)</a> <br>
-            <a href="https://streamtp3.com/global1.php?stream=dsports" class="enlace" target="_blank"> DIRECTV SPORTS (AR)</a> <br>
-            <a href="https://streamtp3.com/global1.php?stream=dsports2" class="enlace" target="_blank"> DIRECTV SPORTS 2 (AR)</a> <br>
+            <a href="https://tvlivre.online/html/fl/?get=RVNQTjM" class="enlace" target="_blank"> ESPN 3 (AR)</a> <br>
+            <a href="https://streamtp11.com/global1.php?stream=dsports" class="enlace" target="_blank"> DIRECTV SPORTS (AR)</a> <br>
+            <a href="https://la14hd.com/vivo/canales.php?stream=dsports2" class="enlace" target="_blank"> DIRECTV SPORTS 2 (AR)</a> <br>
             <a href="https://tvlibreonline.org/html/fl/?get=Rm94U3BvcnRz" class="enlace" target="_blank"> FOX SPORTS 1 (AR)</a> <br>
             <a href="https://tvlibreonline.org/html/fl/?get=Rm94U3BvcnRzMkhE" class="enlace" target="_blank"> FOX SPORTS 2 (AR)</a> <br>
+            <a href="https://tvlivre.online/html/fl/?get=Rm94U3BvcnRzM0hE" class="enlace" target="_blank"> FOX SPORTS 3 (AR)</a> <br>
+            <a href="https://streamtp11.com/global1.php?stream=espnmx" class="enlace" target="_blank"> ESPN 1 (MX)</a> <br>
+            <a href="https://streamtp11.com/global1.php?stream=espn2mx" class="enlace" target="_blank"> ESPN 2 (MX)</a> <br>
+            <a href="https://streamtp11.com/global1.php?stream=espn3mx" class="enlace" target="_blank"> ESPN 3 (MX)</a> <br>
+            <a href="https://streamtp11.com/global1.php?stream=foxsportsmx" class="enlace" target="_blank"> FOX SPORTS 1 (MX)</a> <br>
+            <a href="https://streamtp11.com/global1.php?stream=foxsports2mx" class="enlace" target="_blank"> FOX SPORTS 2 (MX)</a> <br>
+            <a href="https://streamtp11.com/global1.php?stream=foxsports3mx" class="enlace" target="_blank"> FOX SPORTS 3 (MX)</a> <br>            
+            <a href="https://la14hd.com/vivo/canales.php?stream=tudn_mx" class="enlace" target="_blank"> TUDN (MX)</a> <br>
+            <a href="https://streamtp11.com/global1.php?stream=winsports" class="enlace" target="_blank"> WINSPORTS (COL)</a> <br>
 
-            <a href="https://streamdz4.lat/player/embed.php?channel=foxmx" class="enlace" target="_blank"> FOX SPORTS MX</a> <br>
-            <a href="https://streamtp3.com/global1.php?stream=foxsports2mx" class="enlace" target="_blank"> FOX SPORTS2 MX</a> <br>
-            <a href="https://streamtp3.com/global1.php?stream=espnmx" class="enlace" target="_blank"> ESPN MX</a> <br>
-            <a href="https://streamtp3.com/global1.php?stream=espn2mx" class="enlace" target="_blank"> ESPN2 MX</a> <br>
-            <a href="https://streamtp3.com/global1.php?stream=tudn_usa" class="enlace" target="_blank"> TUDN MX</a> <br>
-            <a href="https://streamtp3.com/global1.php?stream=winsports" class="enlace" target="_blank"> WINSPORTS</a> <br>
-
+        <h2>ITERNACIONALES</h2>
+            <a href="https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/index.m3u8" class="enlace" target="_blank"> DW ESPANOL</a> <br>
             <a href="https://tvlibreonline.org/html/fl/?get=RGlzY292ZXJ5SEQ=" class="enlace" target="_blank"> DISCOVERY CHANNEL</a> <br>
             <a href="https://tvlibreonline.org/html/fl/?get=RGlzY292ZXJ5X1dvcmxkX0hE" class="enlace" target="_blank"> DISCOVERY WORLD</a> <br>
             <a href="https://tvlibreonline.org/html/fl/?get=VGhlYXRlcl9IRA==" class="enlace" target="_blank"> DISCOVERY THEATER</a> <br>
@@ -53,7 +69,6 @@
             <a href="https://tvlibreonline.org/html/fl/?get=RGlzY292ZXJ5SG9tZUhlYWx0aEhE" class="enlace" target="_blank"> DISCOVERY H&H</a> <br>
             <a href="https://tvlibreonline.org/html/fl/?get=RGlzY292ZXJ5VHVyYm8=" class="enlace" target="_blank"> DISCOVERY TURBO</a> <br>
             <a href="https://tvlibreonline.org/html/fl/?get=SUQ=" class="enlace" target="_blank"> DISCOVERY ID</a> <br>
-
             <a href="https://tvlibreonline.org/html/fl/?get=SGlzdG9yeUhE" class="enlace" target="_blank"> HISTORY CHANNEL</a> <br>
             <a href="https://tvlibreonline.org/html/fl/?get=SGlzdG9yeV8y" class="enlace" target="_blank"> HISTORY CHANNEL 2</a> <br>
             <a href="https://tvlibreonline.org/html/fl/?get=QW5pbWFsUGxhbmV0" class="enlace" target="_blank"> ANIMAL PLANET</a> <br>
@@ -61,7 +76,6 @@
             <a href="https://tvlibreonline.org/html/fl/?get=V2FybmVySEQ=" class="enlace" target="_blank"> WARNER TV</a> <br>
             <a href="https://tvlibreonline.org/html/fl/?get=SEJPSEQ=" class="enlace" target="_blank"> HBO</a> <br>
             <a href="https://tvlibreonline.org/html/fl/?get=SEJPXzI=" class="enlace" target="_blank"> HBO 2</a> <br>
-            
             <a href="https://tvlibreonline.org/html/fl/?get=U3BhY2U=" class="enlace" target="_blank"> SPACE</a> <br>
             <a href="https://tvlibreonline.org/html/fl/?get=VE5UX0hEX0FyZw==" class="enlace" target="_blank"> TNT</a> <br>
             <a href="https://tvlibreonline.org/html/fl/?get=VE5UU2VyaWVz" class="enlace" target="_blank"> TNT SERIES</a> <br>
@@ -70,7 +84,6 @@
             <a href="https://tvlibreonline.org/html/fl/?get=Q2luZW1heA==" class="enlace" target="_blank"> CINEMAX</a> <br>
             <a href="https://tvlibreonline.org/html/fl/?get=RmlsbV9BcnRz" class="enlace" target="_blank"> FILM & ARTS</a> <br>
             <a href="https://tvlibreonline.org/html/fl/?get=Rk9YSEQ=" class="enlace" target="_blank"> STAR CHANNEL</a> <br>
-            
             <a href="https://tvlibreonline.org/html/fl/?get=U29ueUhE" class="enlace" target="_blank"> SONY CHANNEL</a> <br>
             <a href="https://tvlibreonline.org/html/fl/?get=UGFyYW1vdW50" class="enlace" target="_blank"> PARAMOUNT</a> <br>
             <a href="https://tvlibreonline.org/html/fl/?get=QU1D" class="enlace" target="_blank"> AMC</a> <br>
@@ -82,28 +95,51 @@
             <a href="https://tvlibreonline.org/html/fl/?get=VGVsZW11bmRvX0hE" class="enlace" target="_blank"> TELEMUNDO</a> <br>
             <a href="https://streamtp4.com/global1.php?stream=univision_usa" class="enlace" target="_blank"> UNIVISION</a> <br>
             
-
+        <h2>INFANTILES</h2>
             <a href="https://tvlibreonline.org/html/fl/?get=Q2FydG9vbk5ldHdvcms=" class="enlace" target="_blank"> CARTOON NETWORK</a> <br>
             <a href="https://tvlibreonline.org/html/fl/?get=RGlzbmV5Q2hhbm5lbEhE" class="enlace" target="_blank"> DISNEY CHANNEL</a> <br>
             <a href="https://tvlibreonline.org/html/fl/?get=RGlzY292ZXJ5X0tpZHM=" class="enlace" target="_blank"> DISCOVERY KIDS</a> <br>
             <a href="https://tvlibreonline.org/html/fl/?get=Tmlja2Vsb2Rlb24=" class="enlace" target="_blank"> NICKELODEON</a> <br>
             <a href="https://tvlibreonline.org/html/fl/?get=RHJlYW13b3Jrcw==" class="enlace" target="_blank"> DREAMWORKS</a> <br>
 
+        <h2>MUSICA</h2>
             <a href="https://tvlibreonline.org/html/fl/?get=TVRWX0hE" class="enlace" target="_blank"> MTV</a> <br>
             <a href="https://tvlibreonline.org/html/fl/?get=TVRWX0hpdHM=" class="enlace" target="_blank"> MTV HITS</a> <br>
             <a href="https://tvlibreonline.org/html/fl/?get=SFRW" class="enlace" target="_blank"> HTV MUSICA</a> <br>
-            <a href="https://nuskt.directory/cvatt.html?get=Rmxvd19NdXNpY19YUA==&lang=1" class="enlace" target="_blank"> FLOW MUSIC</a> <br>
-                
-            <a href="https://nuskt.directory/cvatt.html?get=VFZfRXNwYW5h&lang=1" class="enlace" target="_blank"> TVE (ES)</a> <br>
-            <a href="https://tvlibreonline.org/html/fl/?get=QW50ZW5hXzM=" class="enlace" target="_blank"> ANTENA 3 (ES)</a> <br>
-            <a href="https://nebunexa.co/clappr/?id=LA1" class="enlace" target="_blank"> LA 1 (ES)</a> <br>
-            <a href="https://nuskt.directory/canal/?id=DAZN_1_ES" class="enlace" target="_blank"> DAZN 1 (ES)</a> <br>
-            <a href="https://nuskt.directory/canal/?id=DAZN_2_ES" class="enlace" target="_blank"> DAZN 1 (ES)</a> <br>
-            <a href="https://streamtp3.com/global1.php?stream=dazn_laliga" class="enlace" target="_blank"> DAZN LA LIGA (ES)</a> <br>
-                
+            
         </div>
     </section>
-    <br>
+<script>
+    function modoInicial(){
+        const modoInicial = localStorage.getItem('dark-mode');
+        const cajaCambiar = document.getElementById('principal');
+         if(modoInicial == 'true'){
+           cajaCambiar.classList.toggle('activa');
+            document.getElementById('boton').textContent = 'Dia';
+		    document.getElementById('boton').style.background= "yellow";
+		    document.getElementById('boton').style.color= "black";
+            localStorage.setItem('dark-mode', 'true');
+         }
+    }
+	function cambiarTema(){
+	const cajaCambiar = document.getElementById('principal');
+	cajaCambiar.classList.toggle('activa');
+    let modo = document.getElementById('boton').textContent;
+	if (modo == 'Noche'){
+      	document.getElementById('boton').textContent = 'Dia';
+		document.getElementById('boton').style.background= "yellow";
+		document.getElementById('boton').style.color= "black";
+        modo= 'Noche';
+        localStorage.setItem('dark-mode', 'true');
+	}
+  	else {
+		document.getElementById('boton').textContent = 'Noche';
+		document.getElementById('boton').style.background= "black";
+		document.getElementById('boton').style.color= "white";
+        modo= 'Dia';
+        localStorage.setItem('dark-mode', 'false');
+	}
+	}
+</script>
 </body>
 </html>
-
